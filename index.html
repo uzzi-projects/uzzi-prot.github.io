@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UZZI_PROJECTS — Project Management & Partnerships</title>
+  <meta name="description" content="Private contractor; Project management services for government, humanitarian and development organisations." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#102a43; --muted:#617d98; --accent:#1170aa;
+      --container:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    header .brand{display:flex;align-items:center;gap:12px}
+    header img{height:48px;width:auto}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:flex;flex-direction:column;gap:18px;padding:44px 0}
+    .hero h1{font-size:28px;margin:0}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none;margin-top:6px}
+    .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}
+    .card{padding:18px;border-radius:8px;background:#fbfeff;border:1px solid #eef6fb}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    footer{margin-top:40px;padding:24px 0;border-top:1px solid #f0f4f8;color:var(--muted)}
+    form input, form textarea{width:100%;padding:10px;margin-top:8px;border:1px solid #e2eef8;border-radius:6px}
+    form button{margin-top:10px;padding:10px 14px;border-radius:6px;border:none;background:var(--accent);color:#fff}
+    @media(max-width:900px){.cols{grid-template-columns:repeat(1,1fr)} .projects{grid-template-columns:1fr} header nav{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Upload logo to repo and set path here (e.g., assets/logo.png) -->
+        <img src="your-logo.png" alt="UZZI_PROJECTS logo" onerror="this.style.display='none'"/>
+        <div>
+          <div style="font-weight:700">UZZI_PROJECTS</div>
+          <div style="font-size:13px;color:var(--muted)">Project Management • Partnerships • Capacity Building</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>WE_MANAGE,_WE_CLOSE! — Project Management for Development & Humanitarian Impact</h1>
+      <p>We deliver reliable program implementation, monitoring & evaluation, and capacity strengthening for governments, NGOs and donors.</p>
+      <a class="cta" href="#contact">Work with us</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="cols">
+        <div class="card">
+          <h3>Project Management</h3>
+          <p>Full lifecycle management: planning, procurement, execution, and reporting for donor-funded projects.</p>
+        </div>
+        <div class="card">
+          <h3>Monitoring & Evaluation</h3>
+          <p>Design and implement M&E frameworks, baseline/endline surveys, and impact reporting.</p>
+        </div>
+        <div class="card">
+          <h3>Capacity Building</h3>
+          <p>Training, systems strengthening, and institutional reform support to ensure sustainability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="projects">
+        <div class="card"><strong>Project A</strong><p style="color:var(--muted)">Donor-funded infrastructure project — role: PMU & procurement oversight. Outcomes: X, Y, Z.</p></div>
+        <div class="card"><strong>Project B</strong><p style="color:var(--muted)">Humanitarian response management for refugee support — role: coordination & M&E.</p></div>
+      </div>
+    </section>
+
+    <section id="clients" style="margin-top:30px">
+      <h2>Clients & Partners</h2>
+      <p style="color:var(--muted)">Government agencies, UN agencies, international NGOs, and donor-funded programmes. [Add logos below]</p>
+      <!-- Replace with uploaded logo images or plain text -->
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div style="padding:8px 12px;background:#fff;border:1px solid #eef6fb;border-radius:6px;color:var(--muted)">Client Logo A</div>
+        <div style="padding:8px 12px;background:#fff;border:1px solid #eef6fb;border-radius:6px;color:var(--muted)">Client Logo B</div>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:30px">
+      <h2>Our Team</h2>
+      <div class="cols" style="grid-template-columns:repeat(2,1fr)">
+        <div class="card"><strong>Jane Doe</strong><p style="color:var(--muted)">Director — 15+ years managing donor-funded programmes.</p></div>
+        <div class="card"><strong>John Smith</strong><p style="color:var(--muted)">Head of M&E — specialist in impact evaluation.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:30px">
+      <h2>Contact Us</h2>
+      <p style="color:var(--muted)">Send project inquiries or request a capability statement.</p>
+
+      <!-- Contact form (Formspree example). Replace ACTION with your Formspree endpoint. -->
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" required />
+        </label>
+        <label>
+          Organisation
+          <input type="text" name="organisation" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <!-- Optional: add a hidden field to prevent spam -->
+        <input type="text" name="_gotcha" style="display:none" />
+        <button type="submit">Send inquiry</button>
+      </form>
+
+      <p style="margin-top:12px;color:var(--muted)">Or email us directly: <a href="mailto:you@company.com">you@company.com</a></p>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>&copy; <strong>UZZI_PROJECTS</strong> • Registered in [Country]</div>
+        <div style="color:var(--muted)">Follow us: <a href="#" style="color:var(--muted)">LinkedIn</a></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
